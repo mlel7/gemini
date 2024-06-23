@@ -1,0 +1,48 @@
+name: gemini
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_dotenv: ^5.1.0
+  flutter_native_splash: ^2.4.0
+  font_awesome_flutter: ^10.7.0
+  get: ^4.6.6
+  google_generative_ai: ^0.4.3
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/icon.png"
+    icon_size: 48 
+  macos:
+    generate: true
+    image_path: "assets/icon.pngp"
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - .env
+
+flutter_native_splash:
+  color: "#3369FF"
+  image: assets/splashscreen.png
+  android: true
+  ios: true
